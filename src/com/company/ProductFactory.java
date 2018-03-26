@@ -62,8 +62,20 @@ public final class ProductFactory {
 
         this.quantity = quantity;
     }
-
-
+    /**
+    public Product getGood() {
+        if (this.category) {
+            case "milk":
+                return new Milk(this.name, this.fatty, this.weight, this.capacity, this.price);
+            case "sweets":
+                return new Sweets(this.name, this.quantity, this.weight, this.capacity, this.price);
+            case "drink":
+                return new Drink(this.name, this.alcohol, this.weight, this.capacity, this.price);
+            default:
+                System.out.print("Sorry you input invalid category");
+        }
+        return new DefaultProduct();
+    }**/
     public Product getMerchandise() {
         switch (this.category) {
             case "milk":
